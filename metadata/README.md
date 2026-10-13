@@ -12,7 +12,7 @@ relying party or library that can import a local metadata file can consume this
 directly; see [docs/guides/aaguid-metadata.md](../docs/guides/aaguid-metadata.md)
 for the full rationale and the certification boundary.
 
-- **AAGUID:** `2479c7bf-6b30-5683-9ec8-0e8171a918b7`
+- **AAGUID:** `20ac7a17-c814-4833-93fe-539f0d5e3389`
   (`uuid5(NAMESPACE_URL, "https://github.com/TheMaxMur/RS-Key")`).
 - **Attestation:** `basic_full` — packed with an `x5c` leaf, signed by the
   device key rather than the credential key (so not `basic_surrogate`, which is

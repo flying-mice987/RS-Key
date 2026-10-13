@@ -16,14 +16,14 @@ free and what is gated behind FIDO certification.
 ## RS-Key's AAGUID
 
 ```
-2479c7bf-6b30-5683-9ec8-0e8171a918b7
+20ac7a17-c814-4833-93fe-539f0d5e3389
 ```
 
 It is a **UUIDv5**, derived reproducibly so its provenance is self-evident:
 
 ```sh
 python -c 'import uuid; print(uuid.uuid5(uuid.NAMESPACE_URL, "https://github.com/TheMaxMur/RS-Key"))'
-# -> 2479c7bf-6b30-5683-9ec8-0e8171a918b7
+# -> 20ac7a17-c814-4833-93fe-539f0d5e3389
 ```
 
 An AAGUID is **self-assigned**. No central registration is required to pick

@@ -19,7 +19,7 @@ fn main() {
 /// AAGUID for all its VID/PID flavors — the value identifies the firmware model,
 /// not the USB branding (see consts.rs).
 fn resolve_aaguid() -> String {
-    const DEFAULT: &str = "2479c7bf-6b30-5683-9ec8-0e8171a918b7";
+    const DEFAULT: &str = "20ac7a17-c814-4833-93fe-539f0d5e3389";
     let raw = env::var("AAGUID").unwrap_or_else(|_| DEFAULT.to_string());
     let hex = raw
         .chars()
