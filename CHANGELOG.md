@@ -13628,7 +13628,7 @@ firmware change along the way).
 ### Added
 
 - **Own AAGUID + FIDO Metadata Statement.** The authenticator reports its own
-  model identity (`20ac7a17-c814-4833-93fe-539f0d5e3389`, a reproducible UUIDv5)
+  model identity (`ee882879-721c-4913-9775-3dfcce97072a`, a reproducible UUIDv5)
   instead of the inherited pico-fido one, and ships a self-published FIDO
   Metadata Statement (`metadata/rs-key.metadata.json`) with a drift guard.
 - **Supply-chain provenance.** Releases now carry SLSA build provenance

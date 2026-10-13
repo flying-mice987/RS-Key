@@ -1,7 +1,7 @@
 {
   "legalHeader": "RS-Key is AGPL-3.0-only firmware; this Metadata Statement is self-published by the RS-Key project and is NOT a FIDO Alliance MDS listing. attestationRootCertificates is deliberately empty: the packed x5c leaf is generated on the device from its own seed and is self-signed, so there is no batch chain and no anchor to publish. A relying party can check the leaf against the AAGUID and the WebAuthn 8.2.1 subject rules, but cannot chain it — one that requires a trust anchor should treat this attestation as untrusted. See metadata/README.md and docs/guides/aaguid-metadata.md.",
   "description": "RS-Key FIDO2 Authenticator",
-  "aaguid": "20ac7a17-c814-4833-93fe-539f0d5e3389",
+  "aaguid": "ee882879-721c-4913-9775-3dfcce97072a",
   "protocolFamily": "fido2",
   "schema": 3,
   "authenticatorVersion": 329728,

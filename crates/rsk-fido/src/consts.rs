@@ -157,7 +157,7 @@ pub const FLAG_ED: u8 = 0x80; // extension data included
 /// AAGUID — RS-Key's own authenticator-model identifier (UUID **v5**), so the
 /// device stops claiming the inherited model identity. Derived reproducibly as
 /// `uuid5(NAMESPACE_URL, "https://github.com/TheMaxMur/RS-Key")`
-/// = `20ac7a17-c814-4833-93fe-539f0d5e3389`. Self-assigned: an AAGUID needs no
+/// = `ee882879-721c-4913-9775-3dfcce97072a`. Self-assigned: an AAGUID needs no
 /// central registration; FIDO MDS *listing* (a separate, certification-gated
 /// step) is not required for the value itself. One AAGUID across every VID/PID
 /// flavor — it identifies the firmware model, not the USB branding. Build-time

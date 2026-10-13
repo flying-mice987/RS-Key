@@ -44,7 +44,7 @@ def test_expectdiff_serial_ok_and_violation():
 
 
 def test_expectdiff_aaguid_pins_rsk_side():
-    ok = dv.classify("fido.getinfo.aaguid", "abc", "20ac7a17-c814-4833-93fe-539f0d5e3389")
+    ok = dv.classify("fido.getinfo.aaguid", "abc", "ee882879-721c-4913-9775-3dfcce97072a")
     assert ok["bucket"] == dv.ALLOWED
     drift = dv.classify("fido.getinfo.aaguid", "abc", "00000000-dead-beef-0000-000000000000")
     assert drift["bucket"] == dv.RULE_VIOLATION
@@ -175,7 +175,7 @@ def test_compare_clean_when_only_allowlisted_diffs():
     rsk = _snap("rsk", {
         "usb.serialNumber": "rs-key-0001",
         "usb.bcdDevice": "0x081b",
-        "fido.getinfo.aaguid": "20ac7a17-c814-4833-93fe-539f0d5e3389",
+        "fido.getinfo.aaguid": "ee882879-721c-4913-9775-3dfcce97072a",
         "oath.count": 64,
         "fido.getinfo.options.clientPin": True,
     })
@@ -214,7 +214,7 @@ def test_fido_getinfo_cbor_normalizes_key_fields():
         0x0E: 0x050800,
     }
     out = nz.fido_getinfo(cbor)
-    assert out["fido.getinfo.aaguid"] == "20ac7a17-c814-4833-93fe-539f0d5e3389"
+    assert out["fido.getinfo.aaguid"] == "ee882879-721c-4913-9775-3dfcce97072a"
     assert out["fido.getinfo.options.alwaysUv"] is True
     assert out["fido.getinfo.maxMsgSize"] == 7609
     assert out["fido.getinfo.algorithms"] == sorted(["-7", "-8"])
